@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "ozone_backend": {
+      "main": "src/ozone_backend/main.mo",
+      "type": "motoko"
+    },
+    "ozone_frontend": {
+      "dependencies": [
+        "ozone_backend"
+      ],
+      "source": [
+        "src/ozone_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
